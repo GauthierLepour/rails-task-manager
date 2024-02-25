@@ -1,0 +1,12 @@
+<h2><%= @task.titel %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed %></p>
+
+<%= link_to "Delete",
+  task_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+
+<%# <a href="/restaurants/1">Chez Gladines</a>
+<a href="/restaurants/2">Le Temps des Cerises</a>
+<a href="/restaurants/3">La Tour d'Argent</a> %>
